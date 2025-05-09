@@ -1,0 +1,11 @@
+package aplicationmemory;
+
+/**
+ *
+ * @author Sergio Jesus González
+ * @author Alejandro Serrejón
+ */
+
+public interface InterfaceMemory {
+    
+}
