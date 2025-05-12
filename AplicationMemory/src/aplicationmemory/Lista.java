@@ -1,13 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+//paquete de la aplicación
 package aplicationmemory;
 
 /**
- *
- * @author alexa
+ * @author Sergio Jesus González
+ * @author Alejandro Serrejón
+ * @param <E>
  */
+
+//Declaración de la clase
 public class Lista<E> implements ListaInterface<E>{
     
     //Datos:
@@ -17,6 +17,9 @@ public class Lista<E> implements ListaInterface<E>{
     private Object[] lista; // array para guardar lo elementos de la lista.
     private int longitud; // contiene el número de elementos actual de la lista
     
+    //*Métodos:
+    
+    //Método constructor
     public Lista() {
         lista = new Object[maxElementos]; // Se instancia el array.
         longitud = 0; // Se inicializa longitud.
