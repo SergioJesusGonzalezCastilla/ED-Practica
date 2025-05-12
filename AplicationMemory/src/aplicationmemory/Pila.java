@@ -1,14 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+//paquete de la aplicación
 package aplicationmemory;
 
+//se importa el paquete java.util
 import java.util.*;
+
 /**
- *
- * @author alexa
+ * @author Sergio Jesus González
+ * @author Alejandro Serrejón
  */
+
+//Declaración de la clase
 public class Pila<E> implements PilaInterface<E> { 
      
     //datos: 
@@ -17,21 +18,21 @@ public class Pila<E> implements PilaInterface<E> {
     private int posCima = -1; // índice del elemento de la cima 
     private Random numAleatorio = new Random();
      
-    //métodos: 
+    //*Métodos:
  
-    /**---------------------------------------- 
-     * Constructor que crea una pila vacía. 
-     */ 
+    //Método constructor
         public Pila(int maxElem){ 
             this.maxElem = maxElem;
             pila =  (E[]) new Object[maxElem];
     }
-        
+      
+    //devuelve número actual de elementos de la pila
     @Override 
     public int size() { 
         return (posCima + 1); 
     }
 
+    //añade un elemento a la cima de la pila
     @Override 
     public void push(E elem) { 
     E a[]; 
@@ -47,6 +48,7 @@ public class Pila<E> implements PilaInterface<E> {
         pila[posCima]= elem; 
     } 
     
+    //Elimina y devuelve el elemento de la cima
     @Override 
     public E pop() throws EmptyStackException { 
         E cima; 
@@ -58,11 +60,13 @@ public class Pila<E> implements PilaInterface<E> {
         return cima; 
     }
     
+    //Indica si esta vacia la pila
     @Override 
     public boolean isEmpty() { 
         return (posCima < 0); 
     } 
     
+    //Mezcla elementos de la pila usando un algoritmo
     @Override
     public void shuffle() {
         if (posCima <= 0) return; // No hay nada que barajar
@@ -79,3 +83,4 @@ public class Pila<E> implements PilaInterface<E> {
         }
     }
 }
+
