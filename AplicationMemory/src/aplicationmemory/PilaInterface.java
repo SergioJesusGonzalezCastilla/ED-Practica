@@ -1,14 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
+//paquete de la aplicación
 package aplicationmemory;
 
+//se importa el paquete java.util
 import java.util.*;
+
 /**
- *
- * @author alexa
+ * ---------------------------------------------------------------------------- 
+ * INTERFAZ Pila QUE ESPECIFICA LAS OPERACIONES DE LAS PILAS.
+ * @author Sergio Jesus González
+ * @author Alejandro Serrejón
  */
+
+//Declaración de la clase
 public interface PilaInterface<E> {
     // Devuelve el número de elementos de la pila. 
     public int size(); 
@@ -28,5 +31,5 @@ public interface PilaInterface<E> {
     
     //Hace que los numeros se ordenen aleatoriamente
     public void shuffle();
-} 
+}
 
