@@ -1,10 +1,15 @@
+//paquete de la aplicación
 package aplicationmemory;
 
 /**
  * ---------------------------------------------------------------------------- 
  * INTERFAZ Lista QUE ESPECIFICA LAS OPERACIONES DE LAS LISTAS DE ENTEROS.
- * @author Ana Belén Moreno
+ *
+ * @author Sergio Jesus González
+ * @author Alejandro Serrejón
  */
+
+//Declaración de la clase
 public interface ListaInterface<E> {
 
 /*-----------------------------------------------------------------------------
@@ -35,8 +40,5 @@ Especificación del TAD "listas de enteros":
      * Eliminar o borrar todos los elementos de la lista.
      */
     public void clear();
-
-
-
-
+  
  }
